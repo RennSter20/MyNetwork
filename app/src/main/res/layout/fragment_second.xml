@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="16dp">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:text="Save"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Create node"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <TableLayout
+          android:layout_width="420dp"
+          android:layout_height="623dp"
+          android:translationY="0dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldFirstName"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="First name"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="63dp"
+              android:layout_height="55dp"
+              android:src="@drawable/ic_outline_person_24"
+              android:translationX="-150dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldLastName"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Last name"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldPhone"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Phone number"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:id="@+id/imagePhone"
+              android:layout_width="63dp"
+              android:layout_height="55dp"
+              android:src="@drawable/ic_outline_local_phone_24"
+              android:translationX="-150dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldAddress"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Address"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:id="@+id/imageHome"
+              android:layout_width="63dp"
+              android:layout_height="55dp"
+              android:src="@drawable/ic_outline_home_24"
+              android:translationX="-150dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldWork"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Work"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <ImageView
+              android:id="@+id/imageWork"
+              android:layout_width="63dp"
+              android:layout_height="55dp"
+              android:src="@drawable/ic_outline_work_outline_24"
+              android:translationX="-150dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldEducation"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Education"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldCustomFirst"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Name"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextCustomFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:translationY="0dp">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/textFieldOther"
+              android:layout_width="184dp"
+              android:layout_height="wrap_content"
+              android:hint="Other"
+              android:padding="3dp"
+              android:translationX="130dp"
+              android:translationY="-5dp"
+              app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+
+      </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
